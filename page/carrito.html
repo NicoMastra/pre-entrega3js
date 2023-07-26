@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../carpetas/css/style.css" />
+    <title>Cervezas NB</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside>
+        <header>
+          <h1 class="logo">Cervezas NB</h1>
+        </header>
+        <nav>
+          <ul>
+            <li>
+              <a class="boton-menu boton-volver" href="../index.html"
+                ><i class="bi bi-arrow-return-left"></i>Seguir comprando</a
+              >
+            </li>
+            <li>
+              <a
+                class="boton-menu boton-carrito active"
+                href="./page/carrito.html"
+                ><i class="bi bi-cart3"></i>Carrito</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <footer>
+          <p class="texto-footer">©2023 Cervezas Nb</p>
+        </footer>
+      </aside>
+
+      <main>
+        <h2 class="titulo-principal">Carrito</h2>
+        <div class="contenedor-carrito">
+          <p id="carrito-vacio" class="carrito-vacio">
+            Tu carrito esta vacio. <i class="bi bi-emoji-expressionless"></i>
+          </p>
+          <div id="carrito-productos" class="carrito-productos disabled">
+            <!--aca entra el JavaScript-->
+          </div>
+          <div id="carrito-acciones" class="carrito-acciones disabled">
+            <div class="carrito-acciones-izquierda">
+              <button
+                id="carrito-acciones-vaciar"
+                class="carrito-acciones-vaciar"
+              >
+                Vaciar carrito
+              </button>
+            </div>
+            <div class="carrito-acciones-derecha">
+              <div class="carrito-acciones-total">
+                <p>Total:</p>
+                <p id="total"></p>
+              </div>
+              <button
+                id="carrito-acciones-comprar"
+                class="carrito-acciones-comprar"
+              >
+                Comprar ahora
+              </button>
+            </div>
+          </div>
+          <p id="carrito-comprado" class="carrito-comprado disabled">
+            Gracias por tu compra.<i class="bi bi-emoji-kiss"></i>
+          </p>
+        </div>
+      </main>
+    </div>
+    <span
+      id="hora-actual"
+      style="position: fixed; bottom: 10px; right: 10px"
+    ></span>
+    <script src="../carpetas/js/carrito.js"></script>
+  </body>
+</html>
